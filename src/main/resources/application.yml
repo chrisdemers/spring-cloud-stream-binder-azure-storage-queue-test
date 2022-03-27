@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    function:
+      definition: handle
+    stream:
+      bindings:
+        handle-in-0:
+          destination: gestiondonnees-storage-queue
+azure:
+  storage:
+    connection: DefaultEndpointsProtocol=https;AccountName=gestiondonnees;AccountKey=Uzc6eQ6ifcoJa5SP4Bd8imMJ6wVy2N0xfq3J01vjYANPjhIRgsW/ls8p2TPJcEAoVrsi/w3nZyIPo+B5NQ0RHA==;EndpointSuffix=core.windows.net
